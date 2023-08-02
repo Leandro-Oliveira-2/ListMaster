@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
 
-
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +8,7 @@
 }
 
 body {
-  height: 100vh;
+  height: 80vh;
   background: linear-gradient(
     90deg,
     rgba(65, 184, 131, 1) 0%,
@@ -20,41 +19,41 @@ body {
   justify-content: center;
 }
 
-
-
 .container {
-  padding: 30px 40px;
-  width: 40%;
-  min-width: 500px;
-  background: transparent;
-  border-radius: 15px; /* Arredondar os cantos */
+  padding: 3%;
+  min-width: 30%;
+  max-width: 700px;
+  margin: 0 auto;
+  border-radius: 15px;
   box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
 }
 
 .new-task-container {
+  max-width: 60vh;
+  width: 100%;
   background-color: #fff;
-  padding: 30px 20px;
+  padding: 3%;
   border-radius: 5px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   display: flex;
 }
+
 
 .new-task-container input {
   flex: 3;
   font-size: 1rem;
   border: 2px solid #d1d3d4;
   border-radius: 5px;
-  padding: 12px;
+  padding: 1em;
   font-weight: 500;
 }
 
-.new-task-container input:focus {
+.new-task-container input:focus { 
   outline: none;
   border-color: #41b883;
 }
 
 .new-task-button {
-  flex: 1;
   border-radius: 5px;
   font-weight: 500;
   height: 100%;
@@ -62,18 +61,18 @@ body {
   border: none;
   background-color: #41b883;
   color: #fff;
-  padding: 12px;
+  padding: 1em;
   margin-left: 12px;
+  margin-right: 20px;
   cursor: pointer;
 }
 
 .tasks-container {
   background-color: #fff;
-  padding: 30px 20px;
-  margin-top: 60px;
+  padding: 3%;
+  margin-top: 5%;
   border-radius: 10px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-  width: 100%;
 }
 
 .task-item {
@@ -87,13 +86,12 @@ body {
 .task-item i {
   background-color: #41b883;
   color: #fff;
-  padding: 12px;
+  padding: 1em;
   border-radius: 5px;
 }
 
 .task-item i:hover {
   cursor: pointer;
-    padding: 12px;
 }
 
 /* Utilities */
@@ -109,30 +107,7 @@ body {
   text-decoration: line-through;
 }
 
-h1{
+h1 {
   text-align: center;
-  padding: 15px;
-}
-
-/* Responsividade para celular */
-@media (max-width: 600px) {
-  .container {
-    width: 100%;
-    max-width: 100%;
-    border-radius: 0;
-  }
-
-  .new-task-container {
-    flex-direction: column;
-  }
-
-  .new-task-button {
-    margin-left: 0;
-    margin-top: 10px;
-    width: 100%;
-  }
-
-  .tasks-container {
-    margin-top: 40px;
-  }
+  padding: 1em;
 }
